@@ -1,0 +1,1709 @@
+{
+  "analysis_time": "2025-11-06T00:32:34.998863",
+  "total_modules": 79,
+  "dependency_graph": {
+    "nodes": [
+      "core_test",
+      "debug_test",
+      "generate_architecture_diagram",
+      "inference_example",
+      "simple_test",
+      "test_model",
+      "train_example",
+      "data_integration.config_manager",
+      "data_integration.data_quality_monitor",
+      "data_integration.real_data_integration",
+      "data_integration.real_data_manager",
+      "integration.integration_optimizer",
+      "integration.integration_tests",
+      "models.congestion_predictor",
+      "models.debug_gcn",
+      "models.example_usage",
+      "models.gcn_examples",
+      "models.gcn_lstm_hybrid",
+      "models.gcn_network",
+      "models.lstm_predictor",
+      "models.simple_test",
+      "models.test_congestion_predictor",
+      "models.test_gcn",
+      "models.test_lstm_predictor",
+      "models.traffic_prediction_example",
+      "optimization.comprehensive_performance_optimizer",
+      "optimization.comprehensive_report_generator",
+      "optimization.database_cache_optimization",
+      "optimization.frontend_optimization",
+      "optimization.generate_performance_charts",
+      "optimization.model_optimization",
+      "optimization.performance_analysis",
+      "optimization.performance_monitoring",
+      "pathfinding.demo",
+      "pathfinding.dynamic_planner",
+      "pathfinding.emergency_dispatcher",
+      "pathfinding.example_usage",
+      "pathfinding.examples",
+      "pathfinding.multi_objective_planner",
+      "pathfinding.shortest_path",
+      "pathfinding.test_dynamic_planner",
+      "pathfinding.test_emergency_dispatcher",
+      "pathfinding.test_multi_objective_planner",
+      "pathfinding.test_shortest_path",
+      "refactored_architecture.dependency_analyzer",
+      "refactored_architecture.dependency_injection",
+      "refactored_architecture.error_handling",
+      "refactored_architecture.example_refactored_module",
+      "refactored_architecture.modular_config",
+      "refactored_architecture.module_interfaces",
+      "services.congestion_analyzer",
+      "services.demo_core_functions",
+      "services.emergency_advisor",
+      "services.emergency_advisor_example",
+      "services.example_usage",
+      "services.llm_config",
+      "services.llm_service",
+      "services.llm_usage_example",
+      "services.prediction_explainer",
+      "services.prediction_explainer_config",
+      "services.prediction_explainer_examples",
+      "services.test_congestion_analyzer",
+      "services.test_emergency_advisor",
+      "services.test_llm_service",
+      "services.test_prediction_explainer",
+      "services.test_simplified_analyzer",
+      "testing.comprehensive_test_suite",
+      "deployment.caching.model_cache",
+      "deployment.compression.knowledge_distillation",
+      "deployment.compression.model_pruning",
+      "deployment.optimization.deployment_architecture",
+      "deployment.optimization.memory_optimization",
+      "deployment.quantization.model_quantization",
+      "deployment.scripts.optimize_model",
+      "deployment.scripts.server",
+      "deployment.scripts.test_system",
+      "testing.unit.detailed_debug",
+      "testing.unit.layer_debug",
+      "testing.unit.test_modules"
+    ],
+    "edges": [
+      [
+        "data_integration.real_data_integration",
+        "data_integration.data_quality_monitor"
+      ],
+      [
+        "data_integration.real_data_integration",
+        "data_integration.real_data_manager"
+      ],
+      [
+        "data_integration.real_data_integration",
+        "data_integration.config_manager"
+      ],
+      [
+        "integration.integration_optimizer",
+        "pathfinding.multi_objective_planner"
+      ],
+      [
+        "integration.integration_optimizer",
+        "services.llm_service"
+      ],
+      [
+        "integration.integration_optimizer",
+        "pathfinding.shortest_path"
+      ],
+      [
+        "integration.integration_optimizer",
+        "models.congestion_predictor"
+      ],
+      [
+        "integration.integration_optimizer",
+        "pathfinding.emergency_dispatcher"
+      ],
+      [
+        "integration.integration_tests",
+        "models.congestion_predictor"
+      ],
+      [
+        "integration.integration_tests",
+        "pathfinding.emergency_dispatcher"
+      ],
+      [
+        "integration.integration_tests",
+        "services.llm_service"
+      ],
+      [
+        "models.test_gcn",
+        "models.gcn_network"
+      ],
+      [
+        "models.test_lstm_predictor",
+        "models.lstm_predictor"
+      ],
+      [
+        "optimization.performance_analysis",
+        "models.gcn_lstm_hybrid"
+      ],
+      [
+        "pathfinding.example_usage",
+        "pathfinding.shortest_path"
+      ],
+      [
+        "pathfinding.test_emergency_dispatcher",
+        "pathfinding.emergency_dispatcher"
+      ],
+      [
+        "pathfinding.test_shortest_path",
+        "pathfinding.shortest_path"
+      ],
+      [
+        "services.congestion_analyzer",
+        "models.congestion_predictor"
+      ],
+      [
+        "services.emergency_advisor_example",
+        "services.emergency_advisor"
+      ],
+      [
+        "services.test_emergency_advisor",
+        "services.emergency_advisor"
+      ],
+      [
+        "services.test_llm_service",
+        "services.llm_service"
+      ],
+      [
+        "services.test_llm_service",
+        "services.llm_config"
+      ]
+    ],
+    "circular_dependencies": []
+  },
+  "coupling_metrics": {
+    "overall_coupling": 0.0035702693930542034,
+    "avg_in_degree": 0.27848101265822783,
+    "avg_out_degree": 0.27848101265822783,
+    "isolated_nodes": 53
+  },
+  "hardcoded_paths": {
+    "total_files": 79,
+    "files_with_hardcoded_paths": 26,
+    "total_hardcoded_paths": 86,
+    "hardcoded_path_files": [
+      "generate_architecture_diagram.py",
+      "data_integration/config_manager.py",
+      "data_integration/data_quality_monitor.py",
+      "data_integration/real_data_integration.py",
+      "data_integration/real_data_manager.py",
+      "integration/integration_optimizer.py",
+      "integration/integration_tests.py",
+      "models/congestion_predictor.py",
+      "models/example_usage.py",
+      "optimization/comprehensive_performance_optimizer.py",
+      "optimization/comprehensive_report_generator.py",
+      "optimization/database_cache_optimization.py",
+      "optimization/frontend_optimization.py",
+      "optimization/generate_performance_charts.py",
+      "optimization/model_optimization.py",
+      "optimization/performance_analysis.py",
+      "optimization/performance_monitoring.py",
+      "pathfinding/test_emergency_dispatcher.py",
+      "refactored_architecture/dependency_analyzer.py",
+      "refactored_architecture/dependency_injection.py",
+      "services/congestion_analyzer.py",
+      "services/emergency_advisor_example.py",
+      "services/example_usage.py",
+      "testing/comprehensive_test_suite.py",
+      "deployment/optimization/deployment_architecture.py",
+      "deployment/scripts/server.py"
+    ]
+  },
+  "error_handling_patterns": {
+    "import_fallback": 12,
+    "generic_exception": 6,
+    "specific_exception": 41,
+    "no_error_handling": 20
+  },
+  "modules": {
+    "core_test": {
+      "file_path": "core_test.py",
+      "dependencies": [
+        "torch",
+        "sys",
+        "os",
+        "gcn_lstm_hybrid",
+        "traceback",
+        "time",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "debug_test": {
+      "file_path": "debug_test.py",
+      "dependencies": [
+        "torch",
+        "sys",
+        "os",
+        "gcn_lstm_hybrid",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "generate_architecture_diagram": {
+      "file_path": "generate_architecture_diagram.py",
+      "dependencies": [
+        "matplotlib.patches",
+        "seaborn",
+        "numpy",
+        "warnings",
+        "matplotlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "inference_example": {
+      "file_path": "inference_example.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "json",
+        "matplotlib",
+        "sys",
+        "os",
+        "logging",
+        "datetime",
+        "gcn_lstm_hybrid",
+        "warnings",
+        "time",
+        "typing",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "generic_exception"
+    },
+    "simple_test": {
+      "file_path": "simple_test.py",
+      "dependencies": [
+        "gcn_lstm_hybrid",
+        "sys",
+        "os",
+        "traceback"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "test_model": {
+      "file_path": "test_model.py",
+      "dependencies": [
+        "torch",
+        "json",
+        "sys",
+        "os",
+        "logging",
+        "gcn_lstm_hybrid",
+        "time",
+        "typing",
+        "torch.utils.data",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "import_fallback"
+    },
+    "train_example": {
+      "file_path": "train_example.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "json",
+        "matplotlib",
+        "sys",
+        "os",
+        "logging",
+        "datetime",
+        "gcn_lstm_hybrid",
+        "typing",
+        "torch.utils.data",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "data_integration.config_manager": {
+      "file_path": "data_integration/config_manager.py",
+      "dependencies": [
+        "json",
+        "sys",
+        "os",
+        "logging",
+        "datetime",
+        "dataclasses",
+        "typing",
+        "threading",
+        "yaml"
+      ],
+      "dependents": [
+        "data_integration.real_data_integration"
+      ],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "data_integration.data_quality_monitor": {
+      "file_path": "data_integration/data_quality_monitor.py",
+      "dependencies": [
+        "json",
+        "pandas",
+        "matplotlib",
+        "sys",
+        "os",
+        "logging",
+        "enum",
+        "datetime",
+        "dataclasses",
+        "seaborn",
+        "sqlite3",
+        "time",
+        "typing",
+        "threading",
+        "collections",
+        "numpy"
+      ],
+      "dependents": [
+        "data_integration.real_data_integration"
+      ],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "data_integration.real_data_integration": {
+      "file_path": "data_integration/real_data_integration.py",
+      "dependencies": [
+        "data_integration.data_quality_monitor",
+        "json",
+        "sys",
+        "os",
+        "logging",
+        "data_integration.real_data_manager",
+        "datetime",
+        "dataclasses",
+        "asyncio",
+        "sqlite3",
+        "time",
+        "typing",
+        "threading",
+        "data_integration.config_manager",
+        "queue"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "data_integration.real_data_manager": {
+      "file_path": "data_integration/real_data_manager.py",
+      "dependencies": [
+        "json",
+        "pandas",
+        "sys",
+        "os",
+        "logging",
+        "enum",
+        "datetime",
+        "dataclasses",
+        "concurrent.futures",
+        "asyncio",
+        "requests",
+        "sqlite3",
+        "time",
+        "typing",
+        "threading",
+        "numpy"
+      ],
+      "dependents": [
+        "data_integration.real_data_integration"
+      ],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "generic_exception"
+    },
+    "integration.integration_optimizer": {
+      "file_path": "integration/integration_optimizer.py",
+      "dependencies": [
+        "datetime",
+        "pathfinding.multi_objective_planner",
+        "traceback",
+        "services.llm_service",
+        "threading",
+        "concurrent",
+        "logging",
+        "dataclasses",
+        "psutil",
+        "statistics",
+        "requests",
+        "pathfinding.shortest_path",
+        "models.congestion_predictor",
+        "json",
+        "pathfinding.emergency_dispatcher",
+        "sys",
+        "asyncio",
+        "time",
+        "enum",
+        "os",
+        "functools",
+        "subprocess",
+        "typing",
+        "pathlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "import_fallback"
+    },
+    "integration.integration_tests": {
+      "file_path": "integration/integration_tests.py",
+      "dependencies": [
+        "json",
+        "pandas",
+        "models.congestion_predictor",
+        "pathfinding.emergency_dispatcher",
+        "sys",
+        "os",
+        "websockets",
+        "services.llm_service",
+        "unittest",
+        "requests",
+        "asyncio",
+        "time",
+        "threading",
+        "unittest.mock",
+        "numpy",
+        "concurrent"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "import_fallback"
+    },
+    "models.congestion_predictor": {
+      "file_path": "models/congestion_predictor.py",
+      "dependencies": [
+        "collections",
+        "matplotlib",
+        "numpy",
+        "logging",
+        "scipy.optimize",
+        "dataclasses",
+        "scipy.spatial.distance",
+        "sklearn.metrics",
+        "warnings",
+        "pandas",
+        "json",
+        "sklearn.preprocessing",
+        "time",
+        "torch_geometric.nn",
+        "torch",
+        "enum",
+        "seaborn",
+        "typing",
+        "torch_geometric.data"
+      ],
+      "dependents": [
+        "integration.integration_optimizer",
+        "integration.integration_tests",
+        "services.congestion_analyzer"
+      ],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "models.debug_gcn": {
+      "file_path": "models/debug_gcn.py",
+      "dependencies": [
+        "torch",
+        "numpy",
+        "gcn_network"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "models.example_usage": {
+      "file_path": "models/example_usage.py",
+      "dependencies": [
+        "pandas",
+        "json",
+        "congestion_predictor",
+        "sys",
+        "os",
+        "datetime",
+        "seaborn",
+        "numpy",
+        "traceback",
+        "matplotlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "models.gcn_examples": {
+      "file_path": "models/gcn_examples.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "json",
+        "gcn_network",
+        "numpy",
+        "traceback",
+        "pickle",
+        "pathlib",
+        "matplotlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "models.gcn_lstm_hybrid": {
+      "file_path": "models/gcn_lstm_hybrid.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "enum",
+        "logging",
+        "dataclasses",
+        "numpy",
+        "time",
+        "typing",
+        "torch.utils.data",
+        "warnings"
+      ],
+      "dependents": [
+        "optimization.performance_analysis"
+      ],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "models.gcn_network": {
+      "file_path": "models/gcn_network.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "matplotlib",
+        "scipy.sparse",
+        "sklearn.preprocessing",
+        "seaborn",
+        "scipy.spatial.distance",
+        "warnings",
+        "networkx",
+        "sklearn.metrics",
+        "typing",
+        "numpy"
+      ],
+      "dependents": [
+        "models.test_gcn"
+      ],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "models.lstm_predictor": {
+      "file_path": "models/lstm_predictor.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "os",
+        "sklearn.preprocessing",
+        "pickle",
+        "warnings",
+        "sklearn.metrics",
+        "typing",
+        "numpy"
+      ],
+      "dependents": [
+        "models.test_lstm_predictor"
+      ],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "models.simple_test": {
+      "file_path": "models/simple_test.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "sys",
+        "os",
+        "logging",
+        "sklearn.preprocessing",
+        "enum",
+        "dataclasses",
+        "typing",
+        "collections",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "models.test_congestion_predictor": {
+      "file_path": "models/test_congestion_predictor.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "congestion_predictor",
+        "sys",
+        "os",
+        "gc",
+        "psutil",
+        "unittest",
+        "time",
+        "unittest.mock",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "models.test_gcn": {
+      "file_path": "models/test_gcn.py",
+      "dependencies": [
+        "torch",
+        "sys",
+        "os",
+        "seaborn",
+        "numpy",
+        "traceback",
+        "sklearn.metrics",
+        "models.gcn_network",
+        "matplotlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "models.test_lstm_predictor": {
+      "file_path": "models/test_lstm_predictor.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "sys",
+        "os",
+        "unittest",
+        "warnings",
+        "models.lstm_predictor",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "models.traffic_prediction_example": {
+      "file_path": "models/traffic_prediction_example.py",
+      "dependencies": [
+        "pandas",
+        "lstm_predictor",
+        "sys",
+        "os",
+        "datetime",
+        "seaborn",
+        "numpy",
+        "warnings",
+        "matplotlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "optimization.comprehensive_performance_optimizer": {
+      "file_path": "optimization/comprehensive_performance_optimizer.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "json",
+        "logging",
+        "concurrent.futures",
+        "dataclasses",
+        "multiprocessing",
+        "pickle",
+        "warnings",
+        "torch.nn.utils",
+        "time",
+        "typing",
+        "threading",
+        "collections",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "optimization.comprehensive_report_generator": {
+      "file_path": "optimization/comprehensive_report_generator.py",
+      "dependencies": [
+        "json",
+        "os",
+        "logging",
+        "datetime",
+        "typing"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "optimization.database_cache_optimization": {
+      "file_path": "optimization/database_cache_optimization.py",
+      "dependencies": [
+        "json",
+        "pandas",
+        "hashlib",
+        "logging",
+        "datetime",
+        "dataclasses",
+        "pickle",
+        "sqlite3",
+        "time",
+        "typing",
+        "threading",
+        "collections",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "optimization.frontend_optimization": {
+      "file_path": "optimization/frontend_optimization.py",
+      "dependencies": [
+        "json",
+        "os",
+        "logging",
+        "dataclasses",
+        "React,",
+        "re",
+        "time",
+        "typing"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "optimization.generate_performance_charts": {
+      "file_path": "optimization/generate_performance_charts.py",
+      "dependencies": [
+        "json",
+        "datetime",
+        "seaborn",
+        "numpy",
+        "matplotlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "optimization.model_optimization": {
+      "file_path": "optimization/model_optimization.py",
+      "dependencies": [
+        "torch",
+        "json",
+        "copy",
+        "logging",
+        "dataclasses",
+        "warnings",
+        "time",
+        "typing",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "optimization.performance_analysis": {
+      "file_path": "optimization/performance_analysis.py",
+      "dependencies": [
+        "pstats",
+        "GPUtil",
+        "datetime",
+        "matplotlib",
+        "cProfile",
+        "numpy",
+        "logging",
+        "dataclasses",
+        "psutil",
+        "warnings",
+        "pandas",
+        "json",
+        "models.gcn_lstm_hybrid",
+        "sys",
+        "time",
+        "torch",
+        "subprocess",
+        "io",
+        "typing"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "import_fallback"
+    },
+    "optimization.performance_monitoring": {
+      "file_path": "optimization/performance_monitoring.py",
+      "dependencies": [
+        "json",
+        "logging",
+        "datetime",
+        "dataclasses",
+        "psutil",
+        "numpy",
+        "statistics",
+        "time",
+        "typing",
+        "threading",
+        "collections",
+        "matplotlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "pathfinding.demo": {
+      "file_path": "pathfinding/demo.py",
+      "dependencies": [
+        "sys",
+        "os",
+        "traceback",
+        "multi_objective_planner",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "pathfinding.dynamic_planner": {
+      "file_path": "pathfinding/dynamic_planner.py",
+      "dependencies": [
+        "json",
+        "enum",
+        "logging",
+        "datetime",
+        "dataclasses",
+        "uuid",
+        "math",
+        "time",
+        "typing",
+        "heapq",
+        "threading",
+        "collections"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "pathfinding.emergency_dispatcher": {
+      "file_path": "pathfinding/emergency_dispatcher.py",
+      "dependencies": [
+        "json",
+        "enum",
+        "logging",
+        "datetime",
+        "dataclasses",
+        "math",
+        "time",
+        "typing",
+        "heapq",
+        "threading",
+        "collections"
+      ],
+      "dependents": [
+        "integration.integration_optimizer",
+        "integration.integration_tests",
+        "pathfinding.test_emergency_dispatcher"
+      ],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "pathfinding.example_usage": {
+      "file_path": "pathfinding/example_usage.py",
+      "dependencies": [
+        "sys",
+        "os",
+        "traceback",
+        "pathfinding.shortest_path",
+        "time",
+        "typing",
+        "random"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "pathfinding.examples": {
+      "file_path": "pathfinding/examples.py",
+      "dependencies": [
+        "json",
+        "matplotlib",
+        "sys",
+        "os",
+        "traceback",
+        "multi_objective_planner",
+        "networkx",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "pathfinding.multi_objective_planner": {
+      "file_path": "pathfinding/multi_objective_planner.py",
+      "dependencies": [
+        "json",
+        "copy",
+        "abc",
+        "dataclasses",
+        "numpy",
+        "scipy.spatial.distance",
+        "itertools",
+        "warnings",
+        "networkx",
+        "time",
+        "typing",
+        "heapq",
+        "random",
+        "matplotlib"
+      ],
+      "dependents": [
+        "integration.integration_optimizer"
+      ],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "generic_exception"
+    },
+    "pathfinding.shortest_path": {
+      "file_path": "pathfinding/shortest_path.py",
+      "dependencies": [
+        "enum",
+        "logging",
+        "functools",
+        "dataclasses",
+        "time",
+        "typing",
+        "heapq",
+        "threading",
+        "collections"
+      ],
+      "dependents": [
+        "integration.integration_optimizer",
+        "pathfinding.example_usage",
+        "pathfinding.test_shortest_path"
+      ],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "pathfinding.test_dynamic_planner": {
+      "file_path": "pathfinding/test_dynamic_planner.py",
+      "dependencies": [
+        "datetime",
+        "random",
+        "dynamic_planner",
+        "unittest",
+        "time",
+        "threading"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "pathfinding.test_emergency_dispatcher": {
+      "file_path": "pathfinding/test_emergency_dispatcher.py",
+      "dependencies": [
+        "json",
+        "pathfinding.emergency_dispatcher",
+        "sys",
+        "os",
+        "datetime",
+        "unittest",
+        "time"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "pathfinding.test_multi_objective_planner": {
+      "file_path": "pathfinding/test_multi_objective_planner.py",
+      "dependencies": [
+        "matplotlib",
+        "sys",
+        "os",
+        "traceback",
+        "multi_objective_planner",
+        "networkx",
+        "time",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "pathfinding.test_shortest_path": {
+      "file_path": "pathfinding/test_shortest_path.py",
+      "dependencies": [
+        "sys",
+        "os",
+        "unittest",
+        "time",
+        "pathfinding.shortest_path"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "refactored_architecture.dependency_analyzer": {
+      "file_path": "refactored_architecture/dependency_analyzer.py",
+      "dependencies": [
+        "json",
+        "logging",
+        "datetime",
+        "dataclasses",
+        "networkx",
+        "re",
+        "typing",
+        "pathlib",
+        "matplotlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "import_fallback"
+    },
+    "refactored_architecture.dependency_injection": {
+      "file_path": "refactored_architecture/dependency_injection.py",
+      "dependencies": [
+        "json",
+        "sys",
+        "os",
+        "abc",
+        "logging",
+        "dataclasses",
+        "importlib",
+        "time",
+        "typing",
+        "pathlib",
+        "yaml"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "refactored_architecture.error_handling": {
+      "file_path": "refactored_architecture/error_handling.py",
+      "dependencies": [
+        "json",
+        "enum",
+        "logging",
+        "abc",
+        "functools",
+        "datetime",
+        "dataclasses",
+        "traceback",
+        "random",
+        "asyncio",
+        "time",
+        "typing",
+        "threading",
+        "collections"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "refactored_architecture.example_refactored_module": {
+      "file_path": "refactored_architecture/example_refactored_module.py",
+      "dependencies": [
+        "sys",
+        "os",
+        "logging",
+        "module_interfaces",
+        "datetime",
+        "modular_config",
+        "asyncio",
+        "error_handling",
+        "typing",
+        "pathlib",
+        "dependency_injection"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "refactored_architecture.modular_config": {
+      "file_path": "refactored_architecture/modular_config.py",
+      "dependencies": [
+        "json",
+        "enum",
+        "os",
+        "logging",
+        "datetime",
+        "dataclasses",
+        "tempfile",
+        "time",
+        "typing",
+        "pathlib",
+        "threading",
+        "yaml"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "refactored_architecture.module_interfaces": {
+      "file_path": "refactored_architecture/module_interfaces.py",
+      "dependencies": [
+        "enum",
+        "logging",
+        "abc",
+        "datetime",
+        "dataclasses",
+        "asyncio",
+        "typing"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "services.congestion_analyzer": {
+      "file_path": "services/congestion_analyzer.py",
+      "dependencies": [
+        "collections",
+        "numpy",
+        "matplotlib",
+        "sklearn.cluster",
+        "sklearn.decomposition",
+        "logging",
+        "scipy.optimize",
+        "dataclasses",
+        "scipy.spatial.distance",
+        "sklearn.metrics",
+        "models.congestion_predictor",
+        "warnings",
+        "pandas",
+        "json",
+        "sys",
+        "sklearn.preprocessing",
+        "sklearn.ensemble",
+        "time",
+        "torch",
+        "enum",
+        "os",
+        "seaborn",
+        "scipy",
+        "typing"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "generic_exception"
+    },
+    "services.demo_core_functions": {
+      "file_path": "services/demo_core_functions.py",
+      "dependencies": [
+        "json",
+        "pandas",
+        "datetime",
+        "congestion_analyzer",
+        "traceback",
+        "time",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "services.emergency_advisor": {
+      "file_path": "services/emergency_advisor.py",
+      "dependencies": [
+        "pandas",
+        "json",
+        "enum",
+        "logging",
+        "sklearn.preprocessing",
+        "datetime",
+        "dataclasses",
+        "scipy.optimize",
+        "math",
+        "time",
+        "typing",
+        "heapq",
+        "collections",
+        "numpy"
+      ],
+      "dependents": [
+        "services.emergency_advisor_example",
+        "services.test_emergency_advisor"
+      ],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "services.emergency_advisor_example": {
+      "file_path": "services/emergency_advisor_example.py",
+      "dependencies": [
+        "json",
+        "sys",
+        "os",
+        "datetime",
+        "psutil",
+        "traceback",
+        "time",
+        "services.emergency_advisor",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "import_fallback"
+    },
+    "services.example_usage": {
+      "file_path": "services/example_usage.py",
+      "dependencies": [
+        "json",
+        "pandas",
+        "datetime",
+        "congestion_analyzer",
+        "seaborn",
+        "numpy",
+        "traceback",
+        "time",
+        "matplotlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "services.llm_config": {
+      "file_path": "services/llm_config.py",
+      "dependencies": [
+        "os",
+        "dataclasses",
+        "typing",
+        "pathlib",
+        "yaml"
+      ],
+      "dependents": [
+        "services.test_llm_service"
+      ],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "import_fallback"
+    },
+    "services.llm_service": {
+      "file_path": "services/llm_service.py",
+      "dependencies": [
+        "json",
+        "enum",
+        "os",
+        "hashlib",
+        "logging",
+        "abc",
+        "tiktoken",
+        "dataclasses",
+        "aiohttp",
+        "urllib3.util.retry",
+        "asyncio",
+        "requests",
+        "time",
+        "typing",
+        "requests.adapters"
+      ],
+      "dependents": [
+        "integration.integration_optimizer",
+        "integration.integration_tests",
+        "services.test_llm_service"
+      ],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "import_fallback"
+    },
+    "services.llm_usage_example": {
+      "file_path": "services/llm_usage_example.py",
+      "dependencies": [
+        "json",
+        "llm_config",
+        "llm_service",
+        "asyncio",
+        "typing"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "services.prediction_explainer": {
+      "file_path": "services/prediction_explainer.py",
+      "dependencies": [
+        "json",
+        "pandas",
+        "enum",
+        "os",
+        "logging",
+        "abc",
+        "datetime",
+        "dataclasses",
+        "seaborn",
+        "numpy",
+        "warnings",
+        "typing",
+        "matplotlib"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "services.prediction_explainer_config": {
+      "file_path": "services/prediction_explainer_config.py",
+      "dependencies": [
+        "json",
+        "enum",
+        "os",
+        "dataclasses",
+        "typing"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "services.prediction_explainer_examples": {
+      "file_path": "services/prediction_explainer_examples.py",
+      "dependencies": [
+        "json",
+        "sys",
+        "os",
+        "datetime",
+        "traceback",
+        "prediction_explainer",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "services.test_congestion_analyzer": {
+      "file_path": "services/test_congestion_analyzer.py",
+      "dependencies": [
+        "torch",
+        "pandas",
+        "json",
+        "os",
+        "congestion_analyzer",
+        "unittest",
+        "tempfile",
+        "time",
+        "typing",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "services.test_emergency_advisor": {
+      "file_path": "services/test_emergency_advisor.py",
+      "dependencies": [
+        "json",
+        "sys",
+        "os",
+        "datetime",
+        "psutil",
+        "unittest",
+        "time",
+        "services.emergency_advisor",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "import_fallback"
+    },
+    "services.test_llm_service": {
+      "file_path": "services/test_llm_service.py",
+      "dependencies": [
+        "json",
+        "sys",
+        "os",
+        "services.llm_service",
+        "pytest",
+        "asyncio",
+        "time",
+        "typing",
+        "services.llm_config",
+        "unittest.mock"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "services.test_prediction_explainer": {
+      "file_path": "services/test_prediction_explainer.py",
+      "dependencies": [
+        "json",
+        "sys",
+        "os",
+        "datetime",
+        "shutil",
+        "prediction_explainer",
+        "unittest",
+        "tempfile",
+        "time",
+        "unittest.mock",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "services.test_simplified_analyzer": {
+      "file_path": "services/test_simplified_analyzer.py",
+      "dependencies": [
+        "pandas",
+        "sys",
+        "os",
+        "congestion_analyzer",
+        "unittest",
+        "time",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "testing.comprehensive_test_suite": {
+      "file_path": "testing/comprehensive_test_suite.py",
+      "dependencies": [
+        "torch",
+        "json",
+        "congestion_predictor",
+        "lstm_predictor",
+        "sys",
+        "os",
+        "gcn_network",
+        "datetime",
+        "gcn_lstm_hybrid",
+        "time",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "import_fallback"
+    },
+    "deployment.caching.model_cache": {
+      "file_path": "deployment/caching/model_cache.py",
+      "dependencies": [
+        "torch",
+        "json",
+        "gc",
+        "os",
+        "hashlib",
+        "logging",
+        "concurrent.futures",
+        "psutil",
+        "pickle",
+        "sklearn.metrics",
+        "time",
+        "typing",
+        "threading",
+        "collections",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "deployment.compression.knowledge_distillation": {
+      "file_path": "deployment/compression/knowledge_distillation.py",
+      "dependencies": [
+        "torch",
+        "json",
+        "matplotlib",
+        "copy",
+        "os",
+        "sklearn.metrics",
+        "typing",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "deployment.compression.model_pruning": {
+      "file_path": "deployment/compression/model_pruning.py",
+      "dependencies": [
+        "torch",
+        "json",
+        "matplotlib",
+        "copy",
+        "os",
+        "seaborn",
+        "sklearn.metrics",
+        "typing",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "no_error_handling"
+    },
+    "deployment.optimization.deployment_architecture": {
+      "file_path": "deployment/optimization/deployment_architecture.py",
+      "dependencies": [
+        "json",
+        "socket",
+        "GPUtil",
+        "enum",
+        "os",
+        "logging",
+        "dataclasses",
+        "psutil",
+        "subprocess",
+        "platform",
+        "requests",
+        "time",
+        "typing",
+        "docker",
+        "pathlib",
+        "threading",
+        "yaml"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "import_fallback"
+    },
+    "deployment.optimization.memory_optimization": {
+      "file_path": "deployment/optimization/memory_optimization.py",
+      "dependencies": [
+        "torch",
+        "gc",
+        "os",
+        "logging",
+        "dataclasses",
+        "psutil",
+        "tracemalloc",
+        "time",
+        "typing",
+        "weakref",
+        "contextlib",
+        "threading",
+        "collections",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "generic_exception"
+    },
+    "deployment.quantization.model_quantization": {
+      "file_path": "deployment/quantization/model_quantization.py",
+      "dependencies": [
+        "torch",
+        "json",
+        "matplotlib",
+        "copy",
+        "os",
+        "sklearn.metrics",
+        "time",
+        "typing",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "generic_exception"
+    },
+    "deployment.scripts.optimize_model": {
+      "file_path": "deployment/scripts/optimize_model.py",
+      "dependencies": [
+        "torch",
+        "json",
+        "sys",
+        "os",
+        "logging",
+        "compression.knowledge_distillation",
+        "quantization.model_quantization",
+        "compression.model_pruning",
+        "optimization.memory_optimization",
+        "caching.model_cache",
+        "time",
+        "optimization.deployment_architecture",
+        "pathlib",
+        "argparse",
+        "yaml"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "deployment.scripts.server": {
+      "file_path": "deployment/scripts/server.py",
+      "dependencies": [
+        "torch",
+        "json",
+        "sys",
+        "os",
+        "logging",
+        "psutil",
+        "optimization.memory_optimization",
+        "caching.model_cache",
+        "flask",
+        "time",
+        "pathlib",
+        "argparse",
+        "yaml"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": true,
+      "error_handling_pattern": "specific_exception"
+    },
+    "deployment.scripts.test_system": {
+      "file_path": "deployment/scripts/test_system.py",
+      "dependencies": [
+        "torch",
+        "sys",
+        "os",
+        "compression.knowledge_distillation",
+        "quantization.model_quantization",
+        "shutil",
+        "psutil",
+        "traceback",
+        "compression.model_pruning",
+        "optimization.memory_optimization",
+        "caching.model_cache",
+        "optimization.deployment_architecture",
+        "pathlib",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "import_fallback"
+    },
+    "testing.unit.detailed_debug": {
+      "file_path": "testing/unit/detailed_debug.py",
+      "dependencies": [
+        "torch",
+        "sys",
+        "os",
+        "gcn_lstm_hybrid",
+        "traceback",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "testing.unit.layer_debug": {
+      "file_path": "testing/unit/layer_debug.py",
+      "dependencies": [
+        "torch",
+        "sys",
+        "os",
+        "gcn_lstm_hybrid",
+        "traceback",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    },
+    "testing.unit.test_modules": {
+      "file_path": "testing/unit/test_modules.py",
+      "dependencies": [
+        "torch",
+        "sys",
+        "os",
+        "gcn_lstm_hybrid",
+        "traceback",
+        "numpy"
+      ],
+      "dependents": [],
+      "has_hardcoded_paths": false,
+      "error_handling_pattern": "specific_exception"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+# 模型压缩和部署优化配置文件
+
+# 日志配置
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+
+# 模型剪枝配置
+pruning:
+  enabled: true
+  type: "unstructured"  # structured, unstructured, progressive
+  ratio: 0.5  # 剪枝比例
+  fine_tune_epochs: 10  # 微调轮数
+
+# 知识蒸馏配置
+distillation:
+  enabled: false
+  type: "standard"  # standard, progressive
+  temperature: 4.0
+  alpha: 0.7  # 蒸馏损失权重
+  beta: 0.3   # 任务损失权重
+  epochs: 50
+  learning_rate: 0.001
+
+# 模型量化配置
+quantization:
+  enabled: true
+  # 量化策略会自动选择最优的
+
+# 缓存配置
+cache:
+  cache_dir: "./model_cache"
+  max_cache_size_gb: 2.0
+  max_concurrent_loads: 3
+
+# 监控系统配置
+monitoring:
+  memory_limit_gb: 4.0
+  gc_threshold: 0.8  # 垃圾回收阈值
+  monitoring_interval: 1.0  # 监控间隔(秒)
+
+# 输出配置
+output:
+  models_dir: "./output/models"
+  pruning_dir: "./output/pruning"
+  distillation_dir: "./output/distillation"
+  quantization_dir: "./output/quantization"
+  report_path: "./output/optimization_report.json"
+
+# 部署配置
+deployment:
+  default_port: 8080
+  max_workers: 4
+  batch_size: 32
+  enable_gpu: true
+  enable_caching: true
+  cache_size_mb: 512

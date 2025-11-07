@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  traffic-model:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: traffic-model-container
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./model_cache:/app/model_cache
+    environment:
+      - MODEL_PATH=/app/models/best_model.pth
+      - PORT=8080
+      - WORKERS=4
+      - BATCH_SIZE=32
+      - MAX_MEMORY_MB=2048
+      - ENABLE_GPU=false
+      - ENABLE_CACHING=true
+      - CACHE_SIZE_MB=512
+      - LOG_LEVEL=INFO
+    mem_limit: 2048m
+    cpus: 4
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # 可选：添加Nginx反向代理
+  nginx:
+    image: nginx:alpine
+    container_name: traffic-model-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - traffic-model
+    restart: unless-stopped
+    profiles:
+      - with-nginx
+
+  # 可选：添加Redis缓存
+  redis:
+    image: redis:alpine
+    container_name: traffic-model-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    restart: unless-stopped
+    profiles:
+      - with-redis
+
+volumes:
+  redis_data:
+    driver: local
+
+networks:
+  default:
+    name: traffic-model-network

@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-06T13:33:25.446514",
+  "system_info": {
+    "torch_version": "2.9.0+cu128",
+    "cuda_available": false,
+    "device": "cpu"
+  },
+  "test_categories": {
+    "unit_tests": {},
+    "integration_tests": {},
+    "e2e_tests": {},
+    "performance_tests": {},
+    "stress_tests": {},
+    "ux_tests": {}
+  },
+  "summary": {
+    "total_tests": 0,
+    "passed": 0,
+    "failed": 0,
+    "success_rate": 0.0
+  },
+  "import_error": "No module named 'models'"
+}

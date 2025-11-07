@@ -1,0 +1,21 @@
+
+import React, { lazy, Suspense } from 'react';
+
+// 懒加载组件
+const handleIncidentSubmitComponent = lazy(() => import('./handleIncidentSubmit'));
+
+// 加载中组件
+const LoadingComponent = () => (
+  <div className="flex items-center justify-center p-4">
+    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+  </div>
+);
+
+// 懒加载包装器
+export default function handleIncidentSubmitLazy() {
+  return (
+    <Suspense fallback=<LoadingComponent />>
+      <handleIncidentSubmitComponent />
+    </Suspense>
+  );
+}

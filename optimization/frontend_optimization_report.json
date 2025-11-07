@@ -1,0 +1,774 @@
+{
+  "timestamp": 1762354417.8882525,
+  "analysis_results": {
+    "package_json": {
+      "total_dependencies": 55,
+      "total_dev_dependencies": 17,
+      "dependency_sizes": {
+        "@hookform/resolvers": {
+          "size_kb": 20,
+          "version": "^3.10.0",
+          "category": "other"
+        },
+        "@radix-ui/react-accordion": {
+          "size_kb": 20,
+          "version": "^1.2.2",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-alert-dialog": {
+          "size_kb": 20,
+          "version": "^1.1.4",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-aspect-ratio": {
+          "size_kb": 20,
+          "version": "^1.1.1",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-avatar": {
+          "size_kb": 20,
+          "version": "^1.1.2",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-checkbox": {
+          "size_kb": 20,
+          "version": "^1.1.3",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-collapsible": {
+          "size_kb": 20,
+          "version": "^1.1.2",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-context-menu": {
+          "size_kb": 20,
+          "version": "^2.2.4",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-dialog": {
+          "size_kb": 80,
+          "version": "^1.1.4",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-dropdown-menu": {
+          "size_kb": 20,
+          "version": "^2.1.4",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-hover-card": {
+          "size_kb": 20,
+          "version": "^1.1.4",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-label": {
+          "size_kb": 20,
+          "version": "^2.1.1",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-menubar": {
+          "size_kb": 20,
+          "version": "^1.1.4",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-navigation-menu": {
+          "size_kb": 20,
+          "version": "^1.2.3",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-popover": {
+          "size_kb": 20,
+          "version": "^1.1.4",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-progress": {
+          "size_kb": 20,
+          "version": "^1.1.1",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-radio-group": {
+          "size_kb": 20,
+          "version": "^1.2.2",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-scroll-area": {
+          "size_kb": 20,
+          "version": "^1.2.2",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-select": {
+          "size_kb": 20,
+          "version": "^2.1.4",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-separator": {
+          "size_kb": 20,
+          "version": "^1.1.1",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-slider": {
+          "size_kb": 20,
+          "version": "^1.2.2",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-slot": {
+          "size_kb": 20,
+          "version": "^1.1.1",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-switch": {
+          "size_kb": 20,
+          "version": "^1.1.2",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-tabs": {
+          "size_kb": 20,
+          "version": "^1.1.2",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-toast": {
+          "size_kb": 20,
+          "version": "^1.2.4",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-toggle": {
+          "size_kb": 20,
+          "version": "^1.1.1",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-toggle-group": {
+          "size_kb": 20,
+          "version": "^1.1.1",
+          "category": "ui_component"
+        },
+        "@radix-ui/react-tooltip": {
+          "size_kb": 20,
+          "version": "^1.1.6",
+          "category": "ui_component"
+        },
+        "@types/leaflet": {
+          "size_kb": 20,
+          "version": "^1.9.21",
+          "category": "other"
+        },
+        "@types/ws": {
+          "size_kb": 20,
+          "version": "^8.18.1",
+          "category": "other"
+        },
+        "class-variance-authority": {
+          "size_kb": 20,
+          "version": "^0.7.1",
+          "category": "other"
+        },
+        "clsx": {
+          "size_kb": 5,
+          "version": "^2.1.1",
+          "category": "other"
+        },
+        "cmdk": {
+          "size_kb": 20,
+          "version": "1.0.0",
+          "category": "other"
+        },
+        "date-fns": {
+          "size_kb": 30,
+          "version": "^3.0.0",
+          "category": "date_library"
+        },
+        "echarts": {
+          "size_kb": 200,
+          "version": "^6.0.0",
+          "category": "chart_library"
+        },
+        "echarts-for-react": {
+          "size_kb": 20,
+          "version": "^3.0.2",
+          "category": "other"
+        },
+        "embla-carousel-react": {
+          "size_kb": 20,
+          "version": "^8.5.2",
+          "category": "other"
+        },
+        "input-otp": {
+          "size_kb": 20,
+          "version": "^1.4.2",
+          "category": "other"
+        },
+        "leaflet": {
+          "size_kb": 100,
+          "version": "^1.9.4",
+          "category": "map_library"
+        },
+        "lucide-react": {
+          "size_kb": 50,
+          "version": "^0.364.0",
+          "category": "other"
+        },
+        "next-themes": {
+          "size_kb": 20,
+          "version": "^0.4.4",
+          "category": "other"
+        },
+        "react": {
+          "size_kb": 120,
+          "version": "^18.3.1",
+          "category": "react_core"
+        },
+        "react-day-picker": {
+          "size_kb": 20,
+          "version": "8.10.1",
+          "category": "react_core"
+        },
+        "react-dom": {
+          "size_kb": 150,
+          "version": "^18.3.1",
+          "category": "react_core"
+        },
+        "react-hook-form": {
+          "size_kb": 20,
+          "version": "^7.54.2",
+          "category": "react_core"
+        },
+        "react-leaflet": {
+          "size_kb": 20,
+          "version": "^5.0.0",
+          "category": "react_core"
+        },
+        "react-resizable-panels": {
+          "size_kb": 20,
+          "version": "^2.1.7",
+          "category": "react_core"
+        },
+        "react-router-dom": {
+          "size_kb": 20,
+          "version": "^6",
+          "category": "react_core"
+        },
+        "recharts": {
+          "size_kb": 20,
+          "version": "^2.12.4",
+          "category": "chart_library"
+        },
+        "sonner": {
+          "size_kb": 20,
+          "version": "^1.7.2",
+          "category": "other"
+        },
+        "tailwind-merge": {
+          "size_kb": 10,
+          "version": "^2.6.0",
+          "category": "other"
+        },
+        "tailwindcss-animate": {
+          "size_kb": 20,
+          "version": "^1.0.7",
+          "category": "other"
+        },
+        "vaul": {
+          "size_kb": 20,
+          "version": "^1.1.2",
+          "category": "other"
+        },
+        "ws": {
+          "size_kb": 20,
+          "version": "^8.18.3",
+          "category": "other"
+        },
+        "zod": {
+          "size_kb": 20,
+          "version": "^3.24.1",
+          "category": "other"
+        }
+      },
+      "total_size_kb": 1665
+    },
+    "component_dependencies": [
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/ConfidencePanel.tsx",
+        "file_size_kb": 4.41,
+        "imports": [
+          "react",
+          "lucide-react"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 5,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/DataCard.tsx",
+        "file_size_kb": 2.66,
+        "imports": [
+          "react",
+          "lucide-react"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 3,
+        "should_lazy_load": false
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/EmergencyMap.tsx",
+        "file_size_kb": 8.12,
+        "imports": [
+          "react",
+          "leaflet"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 19,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/EmergencyResponse.tsx",
+        "file_size_kb": 8.5,
+        "imports": [
+          "react",
+          "lucide-react",
+          "./EmergencyMap",
+          "./VehicleDispatch",
+          "./RoutePlanning",
+          "../utils/mockData"
+        ],
+        "import_count": 6,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 12,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/ErrorBoundary.tsx",
+        "file_size_kb": 0.85,
+        "imports": [
+          "react"
+        ],
+        "import_count": 1,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 0,
+        "should_lazy_load": false
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/Header.tsx",
+        "file_size_kb": 2.0,
+        "imports": [
+          "react",
+          "lucide-react"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 3,
+        "should_lazy_load": false
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/ModelPerformancePanel.tsx",
+        "file_size_kb": 6.37,
+        "imports": [
+          "react",
+          "lucide-react"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 7,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/Navigation.tsx",
+        "file_size_kb": 1.29,
+        "imports": [
+          "react",
+          "lucide-react"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 2,
+        "should_lazy_load": false
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/PredictionChart.tsx",
+        "file_size_kb": 7.73,
+        "imports": [
+          "react",
+          "echarts"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 11,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/PredictionVisualization.tsx",
+        "file_size_kb": 9.85,
+        "imports": [
+          "react",
+          "lucide-react",
+          "./PredictionChart",
+          "./SpatiotemporalAnimation",
+          "./ConfidencePanel",
+          "../utils/mockData"
+        ],
+        "import_count": 6,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 25,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/RealTimeMonitoring.tsx",
+        "file_size_kb": 5.22,
+        "imports": [
+          "react",
+          "lucide-react",
+          "./DataCard",
+          "./TrafficHeatmap",
+          "./SegmentList",
+          "../utils/mockData"
+        ],
+        "import_count": 6,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 46,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/RoutePlanning.tsx",
+        "file_size_kb": 6.78,
+        "imports": [
+          "react",
+          "lucide-react"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 9,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/SegmentList.tsx",
+        "file_size_kb": 4.54,
+        "imports": [
+          "react",
+          "lucide-react"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 2,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/SpatiotemporalAnimation.tsx",
+        "file_size_kb": 7.25,
+        "imports": [
+          "react",
+          "lucide-react"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 17,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/SystemLogs.tsx",
+        "file_size_kb": 7.23,
+        "imports": [
+          "react",
+          "lucide-react"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 12,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/SystemMetricsChart.tsx",
+        "file_size_kb": 5.61,
+        "imports": [
+          "react",
+          "echarts"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 10,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/SystemMonitoring.tsx",
+        "file_size_kb": 9.24,
+        "imports": [
+          "react",
+          "lucide-react",
+          "./SystemMetricsChart",
+          "./ModelPerformancePanel",
+          "./SystemLogs",
+          "../utils/mockData"
+        ],
+        "import_count": 6,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 30,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/TrafficHeatmap.tsx",
+        "file_size_kb": 4.34,
+        "imports": [
+          "react",
+          "leaflet"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 11,
+        "should_lazy_load": true
+      },
+      {
+        "file_path": "/workspace/traffic-prediction-system/src/components/VehicleDispatch.tsx",
+        "file_size_kb": 6.0,
+        "imports": [
+          "react",
+          "lucide-react"
+        ],
+        "import_count": 2,
+        "performance_issues": [
+          "missing_memo",
+          "missing_memo_hooks"
+        ],
+        "complexity_score": 7,
+        "should_lazy_load": true
+      }
+    ],
+    "unused_dependencies": [],
+    "large_dependencies": []
+  },
+  "split_plan": {
+    "main_bundle": [
+      "/workspace/traffic-prediction-system/src/components/ErrorBoundary.tsx"
+    ],
+    "vendor_bundle": [],
+    "lazy_loaded_components": [
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/ConfidencePanel.tsx",
+        "chunk_name": "chunk_ConfidencePanel",
+        "size_kb": 4.41
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/EmergencyMap.tsx",
+        "chunk_name": "chunk_EmergencyMap",
+        "size_kb": 8.12
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/EmergencyResponse.tsx",
+        "chunk_name": "chunk_EmergencyResponse",
+        "size_kb": 8.5
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/ModelPerformancePanel.tsx",
+        "chunk_name": "chunk_ModelPerformancePanel",
+        "size_kb": 6.37
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/PredictionChart.tsx",
+        "chunk_name": "chunk_PredictionChart",
+        "size_kb": 7.73
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/PredictionVisualization.tsx",
+        "chunk_name": "chunk_PredictionVisualization",
+        "size_kb": 9.85
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/RealTimeMonitoring.tsx",
+        "chunk_name": "chunk_RealTimeMonitoring",
+        "size_kb": 5.22
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/RoutePlanning.tsx",
+        "chunk_name": "chunk_RoutePlanning",
+        "size_kb": 6.78
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/SegmentList.tsx",
+        "chunk_name": "chunk_SegmentList",
+        "size_kb": 4.54
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/SpatiotemporalAnimation.tsx",
+        "chunk_name": "chunk_SpatiotemporalAnimation",
+        "size_kb": 7.25
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/SystemLogs.tsx",
+        "chunk_name": "chunk_SystemLogs",
+        "size_kb": 7.23
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/SystemMetricsChart.tsx",
+        "chunk_name": "chunk_SystemMetricsChart",
+        "size_kb": 5.61
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/SystemMonitoring.tsx",
+        "chunk_name": "chunk_SystemMonitoring",
+        "size_kb": 9.24
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/TrafficHeatmap.tsx",
+        "chunk_name": "chunk_TrafficHeatmap",
+        "size_kb": 4.34
+      },
+      {
+        "component": "/workspace/traffic-prediction-system/src/components/VehicleDispatch.tsx",
+        "chunk_name": "chunk_VehicleDispatch",
+        "size_kb": 6.0
+      }
+    ],
+    "route_based_chunks": {
+      "monitoring": [
+        "RealTimeMonitoring",
+        "SystemMonitoring"
+      ],
+      "prediction": [
+        "PredictionVisualization"
+      ],
+      "emergency": [
+        "EmergencyResponse"
+      ]
+    }
+  },
+  "optimization_suggestions": [
+    "\u603b\u4f9d\u8d56\u5927\u5c0f\u8d85\u8fc71MB\uff0c\u5efa\u8bae\u8fdb\u884c\u4f9d\u8d56\u4f18\u5316",
+    "\u53d1\u73b0 3 \u4e2a\u5927\u578b\u4f9d\u8d56\uff0c\u5efa\u8bae\u4f7f\u7528\u6309\u9700\u52a0\u8f7d",
+    "\u53d1\u73b0 19 \u4e2a\u7ec4\u4ef6\u5b58\u5728\u6027\u80fd\u95ee\u9898\uff0c\u5efa\u8bae\u6dfb\u52a0React.memo\u548c\u6027\u80fd\u4f18\u5316hooks",
+    "\u5efa\u8bae\u5bf9 15 \u4e2a\u5927\u578b\u7ec4\u4ef6\u542f\u7528\u61d2\u52a0\u8f7d",
+    "\u542f\u7528Gzip\u538b\u7f29\u51cf\u5c11\u4f20\u8f93\u5927\u5c0f",
+    "\u4f7f\u7528CDN\u52a0\u901f\u9759\u6001\u8d44\u6e90\u52a0\u8f7d",
+    "\u5b9e\u73b0\u865a\u62df\u6eda\u52a8\u4f18\u5316\u957f\u5217\u8868\u6027\u80fd",
+    "\u4f7f\u7528Web Workers\u5904\u7406\u8ba1\u7b97\u5bc6\u96c6\u4efb\u52a1",
+    "\u542f\u7528Service Worker\u8fdb\u884c\u79bb\u7ebf\u7f13\u5b58"
+  ],
+  "build_config": {
+    "vite_config": {
+      "build": {
+        "rollupOptions": {
+          "output": {
+            "manualChunks": {
+              "vendor": [
+                "react",
+                "react-dom"
+              ],
+              "ui": [
+                "@radix-ui/react-dialog",
+                "@radix-ui/react-dropdown-menu"
+              ],
+              "charts": [
+                "echarts",
+                "recharts"
+              ],
+              "maps": [
+                "leaflet",
+                "react-leaflet"
+              ]
+            }
+          }
+        },
+        "chunkSizeWarningLimit": 500,
+        "minify": "terser",
+        "terserOptions": {
+          "compress": {
+            "drop_console": true,
+            "drop_debugger": true
+          }
+        }
+      },
+      "optimizeDeps": {
+        "include": [
+          "react",
+          "react-dom",
+          "echarts",
+          "leaflet"
+        ]
+      }
+    },
+    "webpack_config": {
+      "optimization": {
+        "splitChunks": {
+          "chunks": "all",
+          "cacheGroups": {
+            "vendor": {
+              "test": "[\\\\/]node_modules[\\\\/]",
+              "name": "vendors",
+              "chunks": "all"
+            }
+          }
+        }
+      }
+    }
+  },
+  "monitoring_code": "\n// \u6027\u80fd\u76d1\u63a7\u5de5\u5177\nclass PerformanceMonitor {\n  static measureRender(componentName) {\n    const startTime = performance.now();\n    \n    return () => {\n      const endTime = performance.now();\n      const renderTime = endTime - startTime;\n      \n      if (renderTime > 16) { // \u8d85\u8fc7\u4e00\u5e27\u7684\u65f6\u95f4\n        console.warn(`\u7ec4\u4ef6 ${componentName} \u6e32\u67d3\u65f6\u95f4\u8fc7\u957f: ${renderTime.toFixed(2)}ms`);\n      }\n    };\n  }\n  \n  static measureApiCall(apiName) {\n    const startTime = performance.now();\n    \n    return (success = true) => {\n      const endTime = performance.now();\n      const callTime = endTime - startTime;\n      \n      console.log(`API\u8c03\u7528 ${apiName} \u8017\u65f6: ${callTime.toFixed(2)}ms`);\n      \n      if (callTime > 1000) {\n        console.warn(`API\u8c03\u7528 ${apiName} \u54cd\u5e94\u65f6\u95f4\u8fc7\u957f`);\n      }\n    };\n  }\n  \n  static trackBundleSize() {\n    if ('performance' in window && performance.getEntriesByType) {\n      const navigation = performance.getEntriesByType('navigation')[0];\n      const resourceEntries = performance.getEntriesByType('resource');\n      \n      const totalSize = resourceEntries.reduce((total, entry) => {\n        return total + (entry.transferSize || 0);\n      }, 0);\n      \n      console.log(`\u603b\u8d44\u6e90\u5927\u5c0f: ${(totalSize / 1024 / 1024).toFixed(2)}MB`);\n    }\n  }\n}\n\n// React\u6027\u80fd\u76d1\u63a7Hook\nexport const usePerformanceMonitor = (componentName) => {\n  React.useEffect(() => {\n    const endMeasure = PerformanceMonitor.measureRender(componentName);\n    return endMeasure;\n  });\n};\n\n// \u9632\u6296Hook\nexport const useDebounce = (value, delay) => {\n  const [debouncedValue, setDebouncedValue] = React.useState(value);\n  \n  React.useEffect(() => {\n    const handler = setTimeout(() => {\n      setDebouncedValue(value);\n    }, delay);\n    \n    return () => {\n      clearTimeout(handler);\n    };\n  }, [value, delay]);\n  \n  return debouncedValue;\n};\n\n// \u8282\u6d41Hook\nexport const useThrottle = (value, delay) => {\n  const [throttledValue, setThrottledValue] = React.useState(value);\n  const lastExecuted = React.useRef(0);\n  \n  React.useEffect(() => {\n    const now = Date.now();\n    if (now - lastExecuted.current >= delay) {\n      setThrottledValue(value);\n      lastExecuted.current = now;\n    }\n  }, [value, delay]);\n  \n  return throttledValue;\n};\n",
+  "optimized_files": [
+    "/workspace/traffic-prediction-system/src/components/ConfidencePanel.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/EmergencyMap.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/EmergencyResponse.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/ModelPerformancePanel.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/PredictionChart.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/PredictionVisualization.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/RealTimeMonitoring.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/RoutePlanning.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/SegmentList.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/SpatiotemporalAnimation.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/SystemLogs.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/SystemMetricsChart.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/SystemMonitoring.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/TrafficHeatmap.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/VehicleDispatch.tsx.lazy",
+    "/workspace/traffic-prediction-system/src/components/ErrorBoundary.tsx"
+  ]
+}

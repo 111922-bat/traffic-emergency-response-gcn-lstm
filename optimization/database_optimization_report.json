@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-11-05T22:52:07.547244",
+  "cache_performance": {
+    "hit_rate": 0.5,
+    "first_query_time": 0.014248371124267578,
+    "second_query_time": 1.6689300537109375e-05,
+    "speedup": 853.7428571428571,
+    "cache_stats": {
+      "size": 1,
+      "max_size": 500,
+      "hit_rate": 0.0,
+      "miss_rate": 0.0
+    }
+  },
+  "database_performance": {
+    "total_queries": 2,
+    "cache_hits": 1,
+    "cache_misses": 1
+  },
+  "prediction_stats": {
+    "total_predictions": 0,
+    "avg_confidence": null,
+    "earliest_prediction": null,
+    "latest_prediction": null
+  },
+  "optimization_applied": [
+    "\u5185\u5b58\u7f13\u5b58",
+    "\u6570\u636e\u5e93\u7d22\u5f15\u4f18\u5316",
+    "\u8fde\u63a5\u6c60\u7ba1\u7406",
+    "\u6279\u91cf\u63d2\u5165\u4f18\u5316",
+    "\u67e5\u8be2\u7ed3\u679c\u7f13\u5b58"
+  ]
+}

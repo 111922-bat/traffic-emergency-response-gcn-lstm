@@ -1,0 +1,122 @@
+# GCN-LSTM混合模型实验配置文件
+# 此配置文件包含所有实验相关的超参数和设置，确保实验可复现性
+
+# 基本信息
+metadata:
+  experiment_name: "gcn_lstm_hybrid_experiment"
+  description: "GCN-LSTM混合模型交通流量预测实验"
+  author: "Project Team"
+  creation_date: "${now}"
+  random_seed: 42
+
+# 数据集配置
+dataset:
+  name: "METR-LA"  # 支持 'METR-LA' 或 'PEMS-BAY'
+  data_dir: "d:/gcn-lstm/data/processed/latest"
+  sequence_length: 12  # 输入序列长度
+  prediction_steps: 3  # 预测步数
+  train_ratio: 0.7
+  val_ratio: 0.1
+  test_ratio: 0.2
+  batch_size: 32
+  shuffle: true
+
+# 模型配置
+model:
+  # 基础配置
+  model_type: "gcn_lstm_hybrid"
+  num_nodes: 207  # METR-LA: 207, PEMS-BAY: 325
+  input_dim: 1
+  output_dim: 1
+  
+  # GCN参数
+  gcn_layers: 2
+  gcn_hidden_dims: [64, 32]
+  gcn_activation: "relu"
+  use_bias: true
+  dropout: 0.3
+  
+  # LSTM参数
+  lstm_layers: 2
+  lstm_hidden_dim: 64
+  lstm_bidirectional: false
+  
+  # 融合策略
+  fusion_strategy: "early"
+  fusion_method: "concat"
+  
+  # 注意力机制
+  use_spatial_attention: true
+  use_temporal_attention: false
+  
+  # 多任务配置
+  use_multitask: false
+  task_weights: [0.7, 0.3]
+
+# 训练配置
+training:
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  optimizer: "adam"
+  scheduler: "reduce_on_plateau"
+  scheduler_patience: 5
+  scheduler_factor: 0.5
+  grad_clip: 1.0
+  
+  # 早停配置
+  early_stopping: true
+  early_stopping_patience: 10
+  early_stopping_metric: "val_mae"
+
+# 评估配置
+evaluation:
+  metrics: ["mae", "rmse", "mape", "r2"]
+  run_times: 5  # 运行次数以计算平均值和标准差
+  save_predictions: true
+  visualize_results: true
+  
+  # 基线模型配置
+  baseline_models:
+    - name: "lstm"
+      params: {}
+    - name: "gcn"
+      params: {}
+    - name: "stgcn"
+      params: {}
+    - name: "t-gcn"
+      params: {}
+
+# 消融实验配置
+ablation:
+  enabled: true
+  experiments:
+    - name: "no_attention"
+      description: "移除注意力机制"
+      modifications:
+        use_spatial_attention: false
+        use_temporal_attention: false
+    - name: "gcn_only"
+      description: "仅使用GCN组件"
+      modifications:
+        model_type: "gcn_only"
+    - name: "lstm_only"
+      description: "仅使用LSTM组件"
+      modifications:
+        model_type: "lstm_only"
+
+# 环境配置
+environment:
+  device: "cuda"  # 或 "cpu"
+  num_workers: 4
+  pin_memory: true
+  precision: "float32"
+
+# 保存配置
+saving:
+  model_dir: "d:/gcn-lstm/models/saved"
+  checkpoint_dir: "d:/gcn-lstm/models/checkpoints"
+  log_dir: "d:/gcn-lstm/logs"
+  results_dir: "d:/gcn-lstm/results"
+  save_every_n_epochs: 10
+  save_best_only: true

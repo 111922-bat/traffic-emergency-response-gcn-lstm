@@ -1,0 +1,238 @@
+# 实验配置模板文件
+# 此文件包含不同类型实验的标准化配置模板
+
+# === 通用实验配置模板 ===
+general_template:
+  # 基本信息
+  experiment_name: "general_experiment"
+  description: "通用实验配置模板"
+  random_seed: 42
+  timestamp: "${TIMESTAMP}"
+  
+  # 数据集配置
+  dataset:
+    name: "METR-LA"
+    data_dir: "./data"
+    adjacency_file: "adj_mx.pkl"
+    features_file: "metr-la.h5"
+    train_ratio: 0.7
+    val_ratio: 0.1
+    test_ratio: 0.2
+    seq_len: 12
+    pred_len: 3
+    normalizer: "minmax"
+    missing_value_strategy: "interpolate"
+    
+  # 模型配置
+  model:
+    type: "GCNLSTMHybrid"
+    gcn_layers: 2
+    lstm_layers: 2
+    gcn_hidden_dim: 64
+    lstm_hidden_dim: 64
+    dropout: 0.2
+    fusion_strategy: "attention"
+    use_spatial_attention: true
+    use_temporal_attention: false
+    
+  # 训练配置
+  training:
+    optimizer: "adam"
+    learning_rate: 0.001
+    lr_decay: 0.9
+    lr_decay_step: 5
+    batch_size: 64
+    epochs: 100
+    patience: 10
+    clip_grad_norm: 5.0
+    use_early_stopping: true
+    checkpoint_dir: "./checkpoints"
+    
+  # 评估配置
+  evaluation:
+    metrics: ["mae", "rmse", "mape", "r2"]
+    evaluate_every: 5
+    save_predictions: true
+    
+  # 环境配置
+  environment:
+    device: "cuda:0"
+    num_workers: 4
+    pin_memory: true
+    
+  # 输出配置
+  output:
+    save_dir: "./results"
+    log_file: "${EXPERIMENT_NAME}_log.txt"
+    save_interval: 10
+
+# === 消融实验配置模板 ===
+ablation_template:
+  # 继承通用模板的基本配置
+  # 基础消融实验设置
+  experiment_name: "ablation_experiment"
+  description: "消融实验配置模板，用于分析不同组件对模型性能的贡献"
+  
+  # 消融实验特定配置
+  ablation:
+    base_model: "GCNLSTMHybrid"
+    ablation_components: ["spatial_attention", "temporal_attention", "fusion_strategy"]
+    ablation_runs: 5  # 每个消融变体运行的次数
+    baseline_config: "./configs/experiment_config.yaml"  # 基准配置路径
+  
+  # 数据集配置 - 与通用模板相同但可能需要调整
+  dataset:
+    name: "METR-LA"
+    data_dir: "./data"
+    train_ratio: 0.7
+    val_ratio: 0.1
+    test_ratio: 0.2
+    
+  # 训练配置 - 确保所有消融变体使用相同的训练参数
+  training:
+    optimizer: "adam"
+    learning_rate: 0.001
+    batch_size: 64
+    epochs: 80  # 消融实验可能需要更少的epoch
+    patience: 8
+    
+  # 评估配置 - 重点关注稳定性指标
+  evaluation:
+    metrics: ["mae", "rmse", "mape", "r2", "std", "ci95"]  # 增加标准差和置信区间
+    cross_validation: false
+    
+  # 输出配置 - 结构化保存消融结果
+  output:
+    save_dir: "./results/ablation"
+    aggregate_results: true
+    visualize: true
+
+# === 对比实验配置模板 ===
+comparison_template:
+  # 对比实验设置
+  experiment_name: "comparison_experiment"
+  description: "对比实验配置模板，用于与基线模型进行公平比较"
+  
+  # 对比实验特定配置
+  comparison:
+    models: ["GCN", "LSTM", "STGCN", "T-GCN", "GCNLSTMHybrid"]
+    comparison_runs: 10  # 每个模型运行的次数以计算统计显著性
+    hyperparameter_dir: "./results/hyperopt"  # 最佳超参数存储目录
+  
+  # 数据集配置 - 确保所有模型使用完全相同的数据集分割
+  dataset:
+    name: "METR-LA"
+    data_dir: "./data"
+    train_ratio: 0.7
+    val_ratio: 0.1
+    test_ratio: 0.2
+    fixed_split_seed: 42  # 固定随机种子以确保分割一致性
+    
+  # 各模型配置
+  models_config:
+    GCN:
+      type: "GCN"
+      gcn_layers: 2
+      hidden_dim: 64
+      dropout: 0.2
+    
+    LSTM:
+      type: "LSTM"
+      lstm_layers: 2
+      hidden_dim: 64
+      dropout: 0.2
+    
+    STGCN:
+      type: "STGCN"
+      gcn_layers: 2
+      lstm_layers: 1
+      hidden_dim: 64
+      dropout: 0.2
+    
+    T-GCN:
+      type: "T-GCN"
+      gcn_layers: 1
+      lstm_layers: 2
+      hidden_dim: 64
+      dropout: 0.2
+    
+    GCNLSTMHybrid:
+      type: "GCNLSTMHybrid"
+      gcn_layers: 2
+      lstm_layers: 2
+      gcn_hidden_dim: 64
+      lstm_hidden_dim: 64
+      dropout: 0.2
+      fusion_strategy: "attention"
+  
+  # 训练配置 - 所有模型使用相同的训练设置
+  training:
+    optimizer: "adam"
+    learning_rate: 0.001
+    batch_size: 64
+    epochs: 100
+    patience: 10
+    
+  # 评估配置 - 详细的统计评估
+  evaluation:
+    metrics: ["mae", "rmse", "mape", "r2", "inference_time"]
+    statistical_test: true  # 执行统计显著性检验
+    significance_level: 0.05
+    
+  # 输出配置 - 详细的对比报告
+  output:
+    save_dir: "./results/comparison"
+    generate_report: true
+    report_format: ["html", "csv", "json"]
+
+# === 超参数优化配置模板 ===
+hyperopt_template:
+  # 超参数优化设置
+  experiment_name: "hyperparameter_optimization"
+  description: "超参数优化配置模板"
+  
+  # 优化配置
+  hyperopt:
+    model_type: "GCNLSTMHybrid"
+    search_algorithm: "bayesian"  # "grid", "random", "bayesian"
+    max_iterations: 50
+    validation_method: "kfold"  # "holdout", "kfold"
+    k_folds: 5
+    n_jobs: -1  # 使用所有可用CPU核心
+    
+    # 超参数搜索空间
+    param_space:
+      learning_rate: ["loguniform", 0.0001, 0.01]
+      batch_size: ["choice", [32, 64, 128]]
+      gcn_layers: ["choice", [1, 2, 3]]
+      lstm_layers: ["choice", [1, 2, 3]]
+      gcn_hidden_dim: ["choice", [32, 64, 128]]
+      lstm_hidden_dim: ["choice", [32, 64, 128]]
+      dropout: ["uniform", 0.1, 0.5]
+      fusion_strategy: ["choice", ["attention", "concat", "sum"]]
+      use_spatial_attention: ["choice", [true, false]]
+  
+  # 数据集配置
+  dataset:
+    name: "METR-LA"
+    data_dir: "./data"
+    train_ratio: 0.8  # 超参数优化时可能使用更大的训练集
+    val_ratio: 0.2
+    
+  # 训练配置 - 简化的训练流程用于快速评估
+  training:
+    optimizer: "adam"
+    epochs: 50  # 超参数评估可以使用较少的epochs
+    patience: 5
+    
+  # 评估配置
+  evaluation:
+    metrics: ["mae", "rmse"]
+    primary_metric: "mae"  # 用于优化的主要指标
+    
+  # 输出配置
+  output:
+    save_dir: "./results/hyperopt"
+    best_params_file: "best_params_${MODEL_TYPE}.json"
+    trials_file: "trials_${MODEL_TYPE}.csv"
+    visualize: true

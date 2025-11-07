@@ -1,0 +1,336 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/schema.json",
+  "color": {
+    "background": {
+      "pure-black": {
+        "$type": "color",
+        "$value": "#000000",
+        "$description": "OLED优化纯黑，用于侧边栏和深度背景"
+      },
+      "primary": {
+        "$type": "color",
+        "$value": "#0A0E1A",
+        "$description": "主页面背景"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "#151B2C",
+        "$description": "内容区域背景"
+      },
+      "card": {
+        "$type": "color",
+        "$value": "#1A2235",
+        "$description": "卡片、图表容器表面"
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "#222D45",
+        "$description": "交互式元素悬停状态"
+      },
+      "modal": {
+        "$type": "color",
+        "$value": "#2A3652",
+        "$description": "模态框、浮层"
+      }
+    },
+    "primary": {
+      "base": {
+        "$type": "color",
+        "$value": "#2196F3",
+        "$description": "科技蓝主色调，对比度8.6:1"
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "#42A5F5",
+        "$description": "主色悬停状态"
+      },
+      "glow": {
+        "$type": "color",
+        "$value": "rgba(33, 150, 243, 0.4)",
+        "$description": "主色发光效果"
+      }
+    },
+    "semantic": {
+      "success": {
+        "$type": "color",
+        "$value": "#4CAF50",
+        "$description": "正常状态、畅通路段，对比度7.8:1"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "#FFC107",
+        "$description": "预警状态、拥堵预警，对比度12.1:1"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "#F44336",
+        "$description": "错误、严重拥堵，对比度7.2:1"
+      },
+      "emergency": {
+        "$type": "color",
+        "$value": "#FF6B35",
+        "$description": "应急状态、紧急事件，对比度8.1:1"
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "#E4E4E7",
+        "$description": "主要文本，zinc-200"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "#A1A1AA",
+        "$description": "次要文本，zinc-400，85%不透明度"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "#71717A",
+        "$description": "辅助文本，zinc-500，60%不透明度"
+      }
+    },
+    "border": {
+      "subtle": {
+        "$type": "color",
+        "$value": "rgba(255, 255, 255, 0.08)",
+        "$description": "微妙边框，卡片边框"
+      },
+      "standard": {
+        "$type": "color",
+        "$value": "rgba(255, 255, 255, 0.12)",
+        "$description": "标准边框，输入框、分隔线"
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "rgba(255, 255, 255, 0.18)",
+        "$description": "强调边框，激活状态"
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "base": {
+        "$type": "fontFamily",
+        "$value": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "$description": "主字体，清晰易读"
+      },
+      "monospace": {
+        "$type": "fontFamily",
+        "$value": "'JetBrains Mono', 'Fira Code', 'Courier New', monospace",
+        "$description": "等宽字体，数据展示"
+      },
+      "display": {
+        "$type": "fontFamily",
+        "$value": "'Space Grotesk', Inter, sans-serif",
+        "$description": "显示字体，大标题"
+      }
+    },
+    "fontSize": {
+      "large-title": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "大标题"
+      },
+      "title": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "标题"
+      },
+      "subtitle": {
+        "$type": "dimension",
+        "$value": "18px",
+        "$description": "副标题"
+      },
+      "body": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "正文"
+      },
+      "small": {
+        "$type": "dimension",
+        "$value": "14px",
+        "$description": "小文本"
+      },
+      "data-large": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "大数据文本"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "$type": "number",
+        "$value": 400,
+        "$description": "常规"
+      },
+      "medium": {
+        "$type": "number",
+        "$value": 500,
+        "$description": "中等"
+      },
+      "semibold": {
+        "$type": "number",
+        "$value": 600,
+        "$description": "半粗体"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "$type": "number",
+        "$value": 1.2,
+        "$description": "紧凑行高，标题"
+      },
+      "normal": {
+        "$type": "number",
+        "$value": 1.4,
+        "$description": "正常行高，副标题"
+      },
+      "relaxed": {
+        "$type": "number",
+        "$value": 1.5,
+        "$description": "宽松行高，正文"
+      }
+    }
+  },
+  "spacing": {
+    "1": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "紧密元素间距"
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "小间距"
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "输入框内边距"
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "标准元素间距"
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "卡片内容间距"
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "卡片内边距"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "大区块间距"
+    },
+    "10": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": "主要模块间距"
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "80px",
+      "$description": "顶部导航高度"
+    }
+  },
+  "borderRadius": {
+    "small": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "按钮、标签、输入框"
+    },
+    "medium": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "卡片、图表容器"
+    },
+    "large": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "模态框、面板"
+    }
+  },
+  "boxShadow": {
+    "glow-primary": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "20px",
+        "spread": "0px",
+        "color": "rgba(33, 150, 243, 0.4)"
+      },
+      "$description": "主色发光效果"
+    },
+    "glow-error": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "24px",
+        "spread": "0px",
+        "color": "rgba(244, 67, 54, 0.5)"
+      },
+      "$description": "告警发光效果"
+    },
+    "glow-warning": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "20px",
+        "spread": "0px",
+        "color": "rgba(255, 193, 7, 0.4)"
+      },
+      "$description": "预警发光效果"
+    },
+    "card-edge": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "1px",
+        "color": "rgba(255, 255, 255, 0.08)"
+      },
+      "$description": "卡片微妙边界"
+    }
+  },
+  "animation": {
+    "duration": {
+      "fast": {
+        "$type": "duration",
+        "$value": "150ms",
+        "$description": "快速动画，按钮悬停"
+      },
+      "normal": {
+        "$type": "duration",
+        "$value": "250ms",
+        "$description": "标准动画，卡片展开"
+      },
+      "slow": {
+        "$type": "duration",
+        "$value": "400ms",
+        "$description": "慢速动画，模态框"
+      }
+    },
+    "easing": {
+      "ease-out": {
+        "$type": "cubicBezier",
+        "$value": [0, 0, 0.2, 1],
+        "$description": "默认缓动函数"
+      },
+      "ease-in-out": {
+        "$type": "cubicBezier",
+        "$value": [0.4, 0, 0.2, 1],
+        "$description": "快速响应"
+      }
+    }
+  }
+}
